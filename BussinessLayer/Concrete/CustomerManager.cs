@@ -24,6 +24,11 @@ namespace BussinessLayer.Concrete
             return _customerDal.GetById(id);
         }
 
+        public List<Customer> GetCustomerWithJobList()
+        {
+           return _customerDal.GetCustomerWithJob();
+        }
+
         public void TDelete(Customer entity)
         {
             _customerDal.Delete(entity);

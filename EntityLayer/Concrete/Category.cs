@@ -1,8 +1,13 @@
-﻿namespace EntityLayer.Concrete
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace EntityLayer.Concrete
 {
     public class Category
     {
-        public int CategoryId { get; set; }
+		[Key]
+		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		public int CategoryId { get; set; }
         public string CategoryName { get; set; }
     }
 }

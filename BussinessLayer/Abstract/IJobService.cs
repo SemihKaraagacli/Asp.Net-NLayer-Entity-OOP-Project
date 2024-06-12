@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace BussinessLayer.Abstract
 {
-    public interface ICustomerService:IGenericService<Customer>
+    public interface IJobService:IGenericService<Job>
     {
-        List<Customer> GetCustomerWithJobList();
+        
     }
 }
